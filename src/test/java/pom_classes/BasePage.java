@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
@@ -69,6 +70,22 @@ public class BasePage {
 
     public boolean isElementPresent(List<WebElement> elements){
         return elements.size()>0;
+    }
+
+    public void selectByText(WebElement element, String text, String log) {
+        try {
+            WebDriverWait wdWait = new WebDriverWait(driver, waitTime);
+            wdWait.until(ExpectedConditions.visibilityOf(element));
+            wdWait.until(ExpectedConditions.elementToBeClickable(element));
+
+            Select select = new Select(element);
+            select.selectByVisibleText(text);
+            System.out.println("Selected " +text+" "+log);
+        } catch (StaleElementReferenceException e) {
+            Select select = new Select(element);
+            select.selectByVisibleText(text);
+            System.out.println("Selected " +text+" "+log);
+        }
     }
 
 }
