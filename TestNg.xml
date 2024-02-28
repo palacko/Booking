@@ -3,6 +3,7 @@
 
 <suite name="Test" parallel="classes" thread-count="1">
     <test name ="Booking">
+        <parameter name="row" value="1"/>
         <classes>
               <class name ="tests.BookingTests"></class>
         </classes>

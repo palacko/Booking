@@ -20,7 +20,7 @@ public class BookingHomePage extends BasePage {
 
     @FindBy(id = ":re:")
     WebElement whereAreYouGoing;
-    @FindBy(xpath = "//div[@class='a1139161bf']")
+    @FindBy(xpath = "//div[@class='f73e6603bf']")
     WebElement checkiInCheckOut;
     @FindBy(css = ".e1eebb6a1e.ee7ec6b631")
     List<WebElement> months;
@@ -44,26 +44,28 @@ public class BookingHomePage extends BasePage {
     WebElement roomsSub;
     @FindBy(css = "[name='age']")
     List<WebElement> childrenAge;
-
+    @FindBy(xpath = "//*[@aria-label='Dismiss sign-in info.']")
+    WebElement clickClose;
 
     public void setWhereAreYouGoing(String location) {
-        typeText(whereAreYouGoing, location, "Typed: " + location);
-        clickElement(driver.findElement(By.xpath(" //li//div[text()='" + location + "']")), "Clicked: " + location);
+        clickClose();
+        typeText(whereAreYouGoing, location, "" + location);
+        clickElement(driver.findElement(By.xpath(" //li//div[text()='" + location + "']")), "" + location);
     }
 
     public void clickDate(String monthYear, String day) {
         while (true) {
             if (driver.findElements(By.xpath("//div[@class='d358556c65']/h3[contains(text(),'" + monthYear + "')]")).size() == 0) {
-                clickElement(nextMonth, "Clicked: Next month");
+                clickElement(nextMonth, "Next month");
             } else {
-                clickElement(driver.findElement(By.xpath("//div[@class='d358556c65']/h3[contains(text(),'" + monthYear + "')]/..//span[text()='" + day + "']")), "Clicked: " + monthYear + " " + day);
+                clickElement(driver.findElement(By.xpath("//div[@class='d358556c65']/h3[contains(text(),'" + monthYear + "')]/..//span[text()='" + day + "']")), "" + monthYear + " " + day);
                 break;
             }
         }
     }
 
     public void checkiInCheckOut(String checkInMonthYear, String checkInDate, String checkOutMonthYear, String checkOutDate) {
-        clickElement(checkiInCheckOut, "Clicked: Check in / Check out");
+//        clickElement(checkiInCheckOut, "Clicked: Check in / Check out");
         clickDate(checkInMonthYear, checkInDate);
         clickDate(checkOutMonthYear, checkOutDate);
     }
@@ -76,7 +78,7 @@ public class BookingHomePage extends BasePage {
      * @param roomsNum Add additional rooms
      */
     public void addGuests(int adultNum, int childrenNum, String[] childrenAge, int roomsNum) {
-        clickElement(guests, "Clicked: Guests");
+        clickElement(guests, "Guests");
         addAdultsNum(adultNum);
         addChildrenNum(childrenNum, childrenAge);
         addRoomsNum(roomsNum);
@@ -84,24 +86,29 @@ public class BookingHomePage extends BasePage {
 
     public void addAdultsNum(int num) {
         for (int i = 1; i < num; i++) {
-            clickElement(adultsAdd, "Clicked: Add adults");
+            clickElement(adultsAdd, "Add adults");
         }
     }
 
     public void addRoomsNum(int num) {
         for (int i = 1; i < num; i++) {
-            clickElement(roomsAdd, "Clicked: Add rooms");
+            clickElement(roomsAdd, "Add rooms");
         }
     }
 
     public void addChildrenNum(int num, String[] year) {
         for (int i = 1; i <= num; i++) {
-            clickElement(childrenAdd, "Clicked: Add children");
+            clickElement(childrenAdd, "Add children");
             selectByText(childrenAge.get(i - 1), year[i - 1], "from child age select");
+            clickElement(guests,"");
         }
     }
 
     public void search() {
-        clickElement(search, "Clicked: Search");
+        clickElement(search, "Search");
+    }
+
+    public void clickClose(){
+        clickElement(clickClose,"Closed Pop-Up");
     }
 }

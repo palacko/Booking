@@ -30,11 +30,11 @@ public class BasePage {
 
             Actions actions = new Actions(driver);
             actions.moveToElement(element).click().build().perform();
-            System.out.println("Clicked " + log);
+            System.out.println("Clicked: " + log);
         } catch (StaleElementReferenceException e) {
             Actions actions = new Actions(driver);
             actions.moveToElement(element).click().build().perform();
-            System.out.println("Clicked " + log);
+            System.out.println("Clicked: " + log);
         }
     }
 

@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8d8fa9b-8534-4882-bf78-1efb40a6e04f" name="Changes" comment="Base for test">
+    <list default="true" id="f8d8fa9b-8534-4882-bf78-1efb40a6e04f" name="Changes" comment="Booking search working example">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pom_classes/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pom_classes/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pom_classes/BookingHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pom_classes/BookingHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BookingTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BookingTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/selenium_core/ChromeDriverManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/selenium_core/ChromeDriverManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/selenium_core/DriverManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/selenium_core/DriverManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/selenium_core/DriverManagerFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/selenium_core/DriverManagerFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/selenium_core/FireFoxDriverManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/selenium_core/FireFoxDriverManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pom_classes/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pom_classes/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pom_classes/BookingHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pom_classes/BookingHomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/BookingTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/BookingTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +53,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Backup Inforce/Automation Java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MiroslavPalackovic/Desktop/POM/src/test_data&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -51,7 +61,11 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MiroslavPalackovic\Desktop\POM\src\test_data" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MiroslavPalackovic\Desktop\POM\src\test_data" />
       <recent name="C:\Users\MiroslavPalackovic\Desktop\POM\src\main\resources" />
       <recent name="C:\Users\MiroslavPalackovic\Desktop\POM" />
       <recent name="C:\Users\MiroslavPalackovic\Desktop\POM\src\test\java\tests" />
@@ -107,22 +121,20 @@
       <option name="project" value="LOCAL" />
       <updated>1708434373288</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Booking search working example">
+      <created>1708875379276</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708875379276</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Base for test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base for test" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Booking search working example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Booking search working example" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
