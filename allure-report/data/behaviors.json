@@ -1,0 +1,30 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "EP001",
+    "children" : [ {
+      "name" : "FE001",
+      "children" : [ {
+        "name" : "US001",
+        "children" : [ {
+          "name" : "Test case name",
+          "uid" : "d07e7dd343a1fe3c",
+          "parentUid" : "9a7c33fdde4cfe098e10bf9ba9bfca0f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1710788628979,
+            "stop" : 1710788628990,
+            "duration" : 11
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "BookingSheet1" ]
+        } ],
+        "uid" : "9a7c33fdde4cfe098e10bf9ba9bfca0f"
+      } ],
+      "uid" : "7302b0283c03b906549e6f645d3ffb52"
+    } ],
+    "uid" : "f416afe67be4bfdcd7f18b618c24be1b"
+  } ]
+}

@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
+import java.util.Map;
 
 public class BookingHomePage extends BasePage {
 
@@ -64,43 +65,42 @@ public class BookingHomePage extends BasePage {
         }
     }
 
-    public void checkiInCheckOut(String checkInMonthYear, String checkInDate, String checkOutMonthYear, String checkOutDate) {
-//        clickElement(checkiInCheckOut, "Clicked: Check in / Check out");
-        clickDate(checkInMonthYear, checkInDate);
-        clickDate(checkOutMonthYear, checkOutDate);
+    public void checkiInCheckOut(Map<String, String> data) {
+        clickDate(data.get("CheckInMonthYear"), data.get("CheckInDay"));
+        clickDate(data.get("CheckOutMonthYear"), data.get("CheckOutDay"));
     }
 
-    /**
-     *
-     * @param adultNum Add additional adults
-     * @param childrenNum Add children num
-     * @param childrenAge Add children age
-     * @param roomsNum Add additional rooms
-     */
-    public void addGuests(int adultNum, int childrenNum, String[] childrenAge, int roomsNum) {
+    public void addGuests(Map<String, String> data) {
         clickElement(guests, "Guests");
-        addAdultsNum(adultNum);
-        addChildrenNum(childrenNum, childrenAge);
-        addRoomsNum(roomsNum);
+        addAdultsNum(data.get("AdultsNum"));
+        addChildrenNum(data);
+        addRoomsNum(data.get("RoomsNum"));
     }
 
-    public void addAdultsNum(int num) {
-        for (int i = 1; i < num; i++) {
+    public void addAdultsNum(String num) {
+        if(num.equalsIgnoreCase("1")){
+            clickElement(adultsSub, "Decrease adults number");
+        }
+
+        for (int i = 2; i < Integer.parseInt(num); i++) {
             clickElement(adultsAdd, "Add adults");
         }
     }
 
-    public void addRoomsNum(int num) {
-        for (int i = 1; i < num; i++) {
+    public void addRoomsNum(String num) {
+        clickElement(guests,"");
+        for (int i = 1; i < Integer.parseInt(num); i++) {
             clickElement(roomsAdd, "Add rooms");
         }
     }
 
-    public void addChildrenNum(int num, String[] year) {
-        for (int i = 1; i <= num; i++) {
-            clickElement(childrenAdd, "Add children");
-            selectByText(childrenAge.get(i - 1), year[i - 1], "from child age select");
-            clickElement(guests,"");
+    public void addChildrenNum(Map<String, String> data) {
+        if(hasValue(data.get("Children"))) {
+            for (int i = 1; i <= data.get("Children").split(",").length; i++) {
+                clickElement(childrenAdd, "Add children");
+                selectByText(childrenAge.get(i - 1), data.get("Child_Age_" + i), "from child age select");
+                clickElement(guests, "");
+            }
         }
     }
 

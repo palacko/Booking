@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Test" parallel="classes" thread-count="1">
-    <test name ="Booking">
-        <parameter name="row" value="1"/>
+<suite name="Test" parallel="tests" thread-count="10">
+    <parameter name="SHEET" value="BookingSheet"/>
+
+    <!--    <test name ="Booking1">-->
+    <!--        <parameter name="TC_ID" value="TC_ID_0001"/>-->
+    <!--        <classes>-->
+    <!--              <class name ="tests.BookingTests"></class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <test name="Reporter Test">
+        <parameter name="SHEET" value="BookingSheet1"/>
         <classes>
-              <class name ="tests.BookingTests"></class>
+            <class name="tests.ReportTest">
+                <methods>
+                    <include name="test1"/>
+                </methods>
+            </class>
         </classes>
     </test>
+
 </suite>

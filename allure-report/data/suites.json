@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Test",
+    "children" : [ {
+      "name" : "Reporter Test",
+      "children" : [ {
+        "name" : "tests.ReportTest",
+        "children" : [ {
+          "name" : "Test case name",
+          "uid" : "d07e7dd343a1fe3c",
+          "parentUid" : "797e1f9c8e487971ec46fd4eeeee44c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1710788628979,
+            "stop" : 1710788628990,
+            "duration" : 11
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "BookingSheet1" ]
+        } ],
+        "uid" : "797e1f9c8e487971ec46fd4eeeee44c7"
+      } ],
+      "uid" : "d7a008d4958df71ed8328856ee141239"
+    } ],
+    "uid" : "0b78c9c59ea4f706402d505dad753d3e"
+  } ]
+}

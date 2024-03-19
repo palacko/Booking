@@ -1,41 +1,40 @@
 package tests;
 
-import excel_core.GetExcelData;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pom_classes.BookingHomePage;
-import selenium_core.DriverManager;
 
 import java.io.IOException;
-import java.util.Map;
 
 public class BookingTests extends BaseTest {
 
+    String TEST_DATA = "src/test_data/Booking.xlsx";
+
     @BeforeMethod
-    public void setup() {
+    @Parameters({"SHEET", "TC_ID"})
+    public void setup(String SHEET, String TC_ID) throws IOException {
         baseSetUp("CHROME", "", 10);
-    }
-
-    @Test
-    @Parameters({"row"})
-    public void booking(String row) throws IOException {
-        Map<String, String> data = new GetExcelData().getRowData("src/test_data/Booking.xlsx","BookingSheet",Integer.parseInt(row));
-        String [] ages = data.get("ChildAges").split(",");
-
-        BookingHomePage bookingHomePage = new BookingHomePage(driver);
-
-        bookingHomePage.setWhereAreYouGoing(data.get("Location"));
-        bookingHomePage.checkiInCheckOut(data.get("CheckInMonthYear"), data.get("CheckInDay"), data.get("CheckOutMonthYear"), data.get("CheckOutDay"));
-        bookingHomePage.addGuests(Integer.parseInt(data.get("AdultsNum")),Integer.parseInt(data.get("ChildrenNum")), ages, Integer.parseInt(data.get("RoomsNum")));
-        bookingHomePage.search();
+        loadTestData(TEST_DATA, SHEET, TC_ID, "1");
+        mergeTestData(TEST_DATA, "ChildData", "Children");
     }
 
     @AfterMethod
     public void tearDown() {
         baseTearDown();
+    }
+
+    @Test
+    public void booking() throws IOException {
+//        mergeTestData("ChildData", "Children");
+
+        BookingHomePage bookingHomePage = new BookingHomePage(driver);
+
+        bookingHomePage.setWhereAreYouGoing(data.get("Location"));
+        bookingHomePage.checkiInCheckOut(data);
+        bookingHomePage.addGuests(data);
+        bookingHomePage.search();
     }
 
 }

@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "MPALACKOVIC-L15",
+    "children" : [ {
+      "name" : "23376@MPALACKOVIC-L15.TestNG-tests-1(17)",
+      "children" : [ {
+        "name" : "Test case name",
+        "uid" : "d07e7dd343a1fe3c",
+        "parentUid" : "2f76f30c2060af2d891c2f874a7c3159",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710788628979,
+          "stop" : 1710788628990,
+          "duration" : 11
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "BookingSheet1" ]
+      } ],
+      "uid" : "2f76f30c2060af2d891c2f874a7c3159"
+    } ],
+    "uid" : "3e97f62eb71d1847828ae7d224432850"
+  } ]
+}
