@@ -4,21 +4,21 @@
 <suite name="Test" parallel="tests" thread-count="10">
     <parameter name="SHEET" value="BookingSheet"/>
 
-    <!--    <test name ="Booking1">-->
-    <!--        <parameter name="TC_ID" value="TC_ID_0001"/>-->
-    <!--        <classes>-->
-    <!--              <class name ="tests.BookingTests"></class>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <test name="Reporter Test">
-        <parameter name="SHEET" value="BookingSheet1"/>
-        <classes>
-            <class name="tests.ReportTest">
-                <methods>
-                    <include name="test1"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
+        <test name ="Booking1">
+            <parameter name="TC_ID" value="TC_ID_0001"/>
+            <classes>
+                  <class name ="tests.BookingTests"></class>
+            </classes>
+        </test>
+<!--    <test name="Reporter Test">-->
+<!--        <parameter name="SHEET" value="BookingSheet1"/>-->
+<!--        <classes>-->
+<!--            <class name="tests.ReportTest">-->
+<!--                <methods>-->
+<!--                    <include name="test1"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 </suite>

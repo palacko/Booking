@@ -1,12 +1,12 @@
 {
-  "uid" : "d07e7dd343a1fe3c",
+  "uid" : "7575086b5f3b4b2a",
   "name" : "Test case name",
   "fullName" : "tests.ReportTest.test1",
   "historyId" : "572bc113a3aa4d179903014812d85f81",
   "time" : {
-    "start" : 1710788628979,
-    "stop" : 1710788628990,
-    "duration" : 11
+    "start" : 1710790114803,
+    "stop" : 1710790114819,
+    "duration" : 16
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,9 +14,9 @@
   "beforeStages" : [ {
     "name" : "setup",
     "time" : {
-      "start" : 1710788624356,
-      "stop" : 1710788628759,
-      "duration" : 4403
+      "start" : 1710790110067,
+      "stop" : 1710790114607,
+      "duration" : 4540
     },
     "description" : "",
     "status" : "passed",
@@ -25,31 +25,31 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "stepsCount" : 0
   } ],
   "afterStages" : [ {
     "name" : "tearDown",
     "time" : {
-      "start" : 1710788629002,
-      "stop" : 1710788629476,
-      "duration" : 474
+      "start" : 1710790114828,
+      "stop" : 1710790115180,
+      "duration" : 352
     },
     "description" : "",
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "c1b60c55182cf730",
+      "uid" : "dc47cb92ba9c19e2",
       "name" : "Test Screenshot",
-      "source" : "c1b60c55182cf730.png",
+      "source" : "dc47cb92ba9c19e2.png",
       "type" : "image/png",
-      "size" : 192439
+      "size" : 192594
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : true
+    "hasContent" : true,
+    "stepsCount" : 0
   } ],
   "labels" : [ {
     "name" : "package",
@@ -74,7 +74,7 @@
     "value" : "MPALACKOVIC-L15"
   }, {
     "name" : "thread",
-    "value" : "23376@MPALACKOVIC-L15.TestNG-tests-1(17)"
+    "value" : "7912@MPALACKOVIC-L15.TestNG-tests-1(17)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -99,7 +99,8 @@
     "value" : "BookingSheet1"
   } ],
   "links" : [ {
-    "name" : "http://www.google.com",
+    "name" : "Test",
+    "url" : "https://www.google.com/Test",
     "type" : "custom"
   }, {
     "name" : "TC001",
@@ -110,14 +111,12 @@
     "url" : "https://domen.jira.com/projekat1/issue/DE001",
     "type" : "issue"
   } ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "d07e7dd343a1fe3c.json",
+  "source" : "7575086b5f3b4b2a.json",
   "parameterValues" : [ "BookingSheet1" ]
 }

@@ -1,0 +1,121 @@
+{
+  "uid" : "39a102d05b2e4687",
+  "name" : "Test case name",
+  "fullName" : "tests.ReportTest.test1",
+  "historyId" : "572bc113a3aa4d179903014812d85f81",
+  "time" : {
+    "start" : 1710788628979,
+    "stop" : 1710788628990,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1710788624356,
+      "stop" : 1710788628759,
+      "duration" : 4403
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1710788629002,
+      "stop" : 1710788629476,
+      "duration" : 474
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "80fd5d0b0be0a8d6",
+      "name" : "Test Screenshot",
+      "source" : "80fd5d0b0be0a8d6.png",
+      "type" : "image/png",
+      "size" : 192439
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.ReportTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.ReportTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "test1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test"
+  }, {
+    "name" : "suite",
+    "value" : "Reporter Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.ReportTest"
+  }, {
+    "name" : "host",
+    "value" : "MPALACKOVIC-L15"
+  }, {
+    "name" : "thread",
+    "value" : "23376@MPALACKOVIC-L15.TestNG-tests-1(17)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "epic",
+    "value" : "EP001"
+  }, {
+    "name" : "story",
+    "value" : "US001"
+  }, {
+    "name" : "feature",
+    "value" : "FE001"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "SHEET",
+    "value" : "BookingSheet1"
+  } ],
+  "links" : [ {
+    "name" : "http://www.google.com",
+    "type" : "custom"
+  }, {
+    "name" : "TC001",
+    "url" : "https://domen.jira.com/projekat1/test/TC001",
+    "type" : "tms"
+  }, {
+    "name" : "DE001",
+    "url" : "https://domen.jira.com/projekat1/issue/DE001",
+    "type" : "issue"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "39a102d05b2e4687.json",
+  "parameterValues" : [ "BookingSheet1" ]
+}

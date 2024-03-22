@@ -4,10 +4,163 @@
   "children" : [ {
     "name" : "MPALACKOVIC-L15",
     "children" : [ {
+      "name" : "21340@MPALACKOVIC-L15.TestNG-tests-1(17)",
+      "children" : [ {
+        "name" : "Test case name",
+        "uid" : "6686f584c4bc0c8e",
+        "parentUid" : "4aec2a0e93f341c3fa0b6fc62ba975b6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1710790278546,
+          "stop" : 1710790278611,
+          "duration" : 65
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "BookingSheet1" ]
+      } ],
+      "uid" : "4aec2a0e93f341c3fa0b6fc62ba975b6"
+    }, {
+      "name" : "7912@MPALACKOVIC-L15.TestNG-tests-1(17)",
+      "children" : [ {
+        "name" : "Test case name",
+        "uid" : "7575086b5f3b4b2a",
+        "parentUid" : "a579c16ff86f6bca0c25d0ca2b31599e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710790114803,
+          "stop" : 1710790114819,
+          "duration" : 16
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "BookingSheet1" ]
+      } ],
+      "uid" : "a579c16ff86f6bca0c25d0ca2b31599e"
+    }, {
+      "name" : "4476@MPALACKOVIC-L15.TestNG-tests-1(17)",
+      "children" : [ {
+        "name" : "Test case name",
+        "uid" : "97840b90842bec86",
+        "parentUid" : "0f38e2a0017e623afb7a6bc40a35865b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710790215662,
+          "stop" : 1710790215675,
+          "duration" : 13
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "BookingSheet1" ]
+      } ],
+      "uid" : "0f38e2a0017e623afb7a6bc40a35865b"
+    }, {
+      "name" : "20928@MPALACKOVIC-L15.TestNG-tests-1(17)",
+      "children" : [ {
+        "name" : "Test case name",
+        "uid" : "1dd18c1111e762c5",
+        "parentUid" : "c2e68e57d81ea4c35d8670689e7f72f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710845385418,
+          "stop" : 1710845385434,
+          "duration" : 16
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "BookingSheet1" ]
+      } ],
+      "uid" : "c2e68e57d81ea4c35d8670689e7f72f4"
+    }, {
+      "name" : "18344@MPALACKOVIC-L15.TestNG-tests-1(17)",
+      "children" : [ {
+        "name" : "booking",
+        "uid" : "765dd9d6938f5e3e",
+        "parentUid" : "b8bfc32c41d4a983729509cd5ac867b9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1710960575226,
+          "stop" : 1710960610538,
+          "duration" : 35312
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "BookingSheet", "TC_ID_0001" ]
+      } ],
+      "uid" : "b8bfc32c41d4a983729509cd5ac867b9"
+    }, {
+      "name" : "8704@MPALACKOVIC-L15.TestNG-tests-1(17)",
+      "children" : [ {
+        "name" : "Test case name",
+        "uid" : "15549349be134476",
+        "parentUid" : "edce343b826ef5318e49d63e72cbd720",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710851530754,
+          "stop" : 1710851530764,
+          "duration" : 10
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "BookingSheet1" ]
+      } ],
+      "uid" : "edce343b826ef5318e49d63e72cbd720"
+    }, {
+      "name" : "13768@MPALACKOVIC-L15.TestNG-tests-1(17)",
+      "children" : [ {
+        "name" : "booking",
+        "uid" : "5919ad1b1a269ed4",
+        "parentUid" : "42b6b7c79fa799aa6e0c2920fcbac7b2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711048693831,
+          "stop" : 1711048701121,
+          "duration" : 7290
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "BookingSheet", "TC_ID_0001" ]
+      } ],
+      "uid" : "42b6b7c79fa799aa6e0c2920fcbac7b2"
+    }, {
+      "name" : "3384@MPALACKOVIC-L15.TestNG-tests-1(17)",
+      "children" : [ {
+        "name" : "Test case name",
+        "uid" : "297b084b30aaa493",
+        "parentUid" : "b0947e03c05086fc26394718383a6e47",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710791682475,
+          "stop" : 1710791682488,
+          "duration" : 13
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "BookingSheet1" ]
+      } ],
+      "uid" : "b0947e03c05086fc26394718383a6e47"
+    }, {
+      "name" : "21292@MPALACKOVIC-L15.TestNG-tests-1(17)",
+      "children" : [ {
+        "name" : "booking",
+        "uid" : "3eba4bb74577baa6",
+        "parentUid" : "0f43c106d6d155c1aec373edfe2e79dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710960625873,
+          "stop" : 1710960633132,
+          "duration" : 7259
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "BookingSheet", "TC_ID_0001" ]
+      } ],
+      "uid" : "0f43c106d6d155c1aec373edfe2e79dd"
+    }, {
       "name" : "23376@MPALACKOVIC-L15.TestNG-tests-1(17)",
       "children" : [ {
         "name" : "Test case name",
-        "uid" : "d07e7dd343a1fe3c",
+        "uid" : "39a102d05b2e4687",
         "parentUid" : "2f76f30c2060af2d891c2f874a7c3159",
         "status" : "passed",
         "time" : {
@@ -20,6 +173,23 @@
         "parameters" : [ "BookingSheet1" ]
       } ],
       "uid" : "2f76f30c2060af2d891c2f874a7c3159"
+    }, {
+      "name" : "10024@MPALACKOVIC-L15.TestNG-tests-1(17)",
+      "children" : [ {
+        "name" : "Test case name",
+        "uid" : "8d72c9c20166c8c4",
+        "parentUid" : "1b4ad211e2ef68dbc2d20adfa1d55b14",
+        "status" : "broken",
+        "time" : {
+          "start" : 1710791310439,
+          "stop" : 1710791310544,
+          "duration" : 105
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "BookingSheet1" ]
+      } ],
+      "uid" : "1b4ad211e2ef68dbc2d20adfa1d55b14"
     } ],
     "uid" : "3e97f62eb71d1847828ae7d224432850"
   } ]

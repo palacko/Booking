@@ -39,6 +39,7 @@ public class ReportTest extends BaseTest {
     @TmsLink("TC001")
     @Issue("DE001")
     public void test1() {
+
                 Assert.assertTrue(true);
     }
 

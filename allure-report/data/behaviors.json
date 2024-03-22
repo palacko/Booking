@@ -9,13 +9,13 @@
         "name" : "US001",
         "children" : [ {
           "name" : "Test case name",
-          "uid" : "d07e7dd343a1fe3c",
+          "uid" : "15549349be134476",
           "parentUid" : "9a7c33fdde4cfe098e10bf9ba9bfca0f",
           "status" : "passed",
           "time" : {
-            "start" : 1710788628979,
-            "stop" : 1710788628990,
-            "duration" : 11
+            "start" : 1710851530754,
+            "stop" : 1710851530764,
+            "duration" : 10
           },
           "flaky" : false,
           "newFailed" : false,
@@ -26,5 +26,18 @@
       "uid" : "7302b0283c03b906549e6f645d3ffb52"
     } ],
     "uid" : "f416afe67be4bfdcd7f18b618c24be1b"
+  }, {
+    "name" : "booking",
+    "uid" : "5919ad1b1a269ed4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1711048693831,
+      "stop" : 1711048701121,
+      "duration" : 7290
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "BookingSheet", "TC_ID_0001" ]
   } ]
 }

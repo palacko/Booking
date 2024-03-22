@@ -2,21 +2,42 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "tests.ReportTest",
+    "name" : "tests",
     "children" : [ {
-      "name" : "test1",
-      "uid" : "d07e7dd343a1fe3c",
-      "parentUid" : "b9206c6a2a9c0f276f5310bfeab4f2bf",
-      "status" : "passed",
-      "time" : {
-        "start" : 1710788628979,
-        "stop" : 1710788628990,
-        "duration" : 11
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "BookingSheet1" ]
+      "name" : "ReportTest",
+      "children" : [ {
+        "name" : "test1",
+        "uid" : "15549349be134476",
+        "parentUid" : "b9206c6a2a9c0f276f5310bfeab4f2bf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710851530754,
+          "stop" : 1710851530764,
+          "duration" : 10
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "BookingSheet1" ]
+      } ],
+      "uid" : "b9206c6a2a9c0f276f5310bfeab4f2bf"
+    }, {
+      "name" : "BookingTests",
+      "children" : [ {
+        "name" : "booking",
+        "uid" : "5919ad1b1a269ed4",
+        "parentUid" : "e2258129727327e1665dae625c3979fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711048693831,
+          "stop" : 1711048701121,
+          "duration" : 7290
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "BookingSheet", "TC_ID_0001" ]
+      } ],
+      "uid" : "e2258129727327e1665dae625c3979fd"
     } ],
-    "uid" : "tests.ReportTest"
+    "uid" : "bf49149a3821e34f7608bb6885d52868"
   } ]
 }
