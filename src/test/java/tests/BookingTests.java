@@ -4,6 +4,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import pom_classes.BasePage;
 import pom_classes.BookingHomePage;
 
 import java.io.IOException;
@@ -21,7 +22,8 @@ public class BookingTests extends BaseTest {
     }
 
     @AfterMethod
-    public void tearDown() {
+    public void tearDown() throws IOException {
+        new BasePage(driver).reportScreenshot("TestScreenshot_" + System.currentTimeMillis(), "Test Screenshot");
         baseTearDown();
     }
 

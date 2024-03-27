@@ -19,7 +19,7 @@ public class BaseTest {
 
     public void baseSetUp(String browser, String version, int wait) {
         driverManager = DriverManagerFactory.getDriverManager(browser);
-        driver = driverManager.getWebDriver(version);
+        driver = driverManager.getWebDriver();
         driver.get("https://www.booking.com/");
         driver.manage().timeouts().implicitlyWait(wait, TimeUnit.SECONDS);
     }

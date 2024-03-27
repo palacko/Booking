@@ -1,15 +1,13 @@
 package selenium_core;
-
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 
-public class FirefoxDriverManager extends DriverManager {
-    public void createWebDriver(String version) {
-        System.setProperty("webdriver.geckodriver.driver","src/main/resources/geckodriver"+version+".exe");
-        FirefoxOptions options = new FirefoxOptions();
-        options.addArguments("start-maximized");
-        driver = new FirefoxDriver(options);
+public class FirefoxDriverManager extends DriverManager{
+    @Override
+    public void createWebDriver() {
+        WebDriverManager.firefoxdriver().setup();
+        driver = new FirefoxDriver();
+        driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
     }
 }
